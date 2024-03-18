@@ -1,0 +1,108 @@
+/* .card-group{
+    background-color:#101b2f;
+}
+img{
+    height: 220px;
+    padding: 1px;
+}
+p{
+    text-align: justify;
+}
+
+.card-body{
+    background-color: rgb(255, 255, 255);
+}
+
+.btn{
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: bisque;
+    background-size: 200%;
+    background-image: linear-gradient( to left,#4b7bec,#a55eea,#4b7bec);
+    transition: 0.6s;
+}
+
+.btn:hover{
+    background-position: right;
+}
+
+.card{
+    border-radius: 20px;
+}
+img{
+    border-radius: 20px;
+}
+
+.card-body{
+    border-radius: 20px;
+}
+
+.card-group{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.97);
+    margin: 2px;
+}
+ */
+
+
+.card-group {
+    background-color: #101b2f;
+}
+
+img {
+    height: 220px;
+    padding: 1px;
+}
+
+p {
+    text-align: justify;
+}
+
+.btn {
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: bisque;
+    background-size: 200%;
+    background-image: linear-gradient(to left, #4b7bec, #a55eea, #4b7bec);
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background-position: right;
+}
+
+.card {
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out; /* Added transition for smooth effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Increased size on hover */
+}
+
+img {
+    border-radius: 20px;
+}
+
+.card-body {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-group {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.97);
+    margin: 2px;
+}

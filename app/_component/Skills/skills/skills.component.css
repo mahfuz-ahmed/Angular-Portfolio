@@ -1,0 +1,16 @@
+
+h5{
+    color: #94a3b8;
+}
+.progress-bar{
+    background: linear-gradient( to left,#4b7bec,#a55eea,#4b7bec);
+    cursor: pointer;
+}
+
+.col-md-4:hover{
+    transform: scale(1.05);
+}
+
+.col-md-4{
+    transition: transform 0.3s ease-in-out;
+}
