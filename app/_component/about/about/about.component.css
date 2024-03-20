@@ -2,10 +2,13 @@
 .text {
     width: 100%;
     border-radius: 20px;
-    max-width: 800px; /* Adjust maximum width as needed */
     margin: 0 auto; /* Center the map horizontally */
 }
 
 img{
     border-radius: 20px;
+}
+
+body{
+    background-color: rgb(16,27,47);
 }

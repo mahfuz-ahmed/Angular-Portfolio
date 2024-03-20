@@ -15,7 +15,7 @@ import { ContactComponent } from './_component/contact/contact/contact.component
 import { FooterComponent } from './_component/footer/footer/footer.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/banner', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'banner', component: BannerComponent },
   { path: 'projects', component: ProjectsComponent },
