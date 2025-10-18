@@ -1,0 +1,122 @@
+<div class="container mt-2">
+  <!-- Languages Section -->
+  <div class="skill-category">
+    <h3>Languages</h3>
+    <div class="row g-4">
+      <div
+        class="col-lg-2 col-md-3 col-sm-4 col-6"
+        *ngFor="let skill of languageSkills"
+      >
+        <div class="skill-card">
+          <div class="circle-wrap">
+            <div
+              class="circle"
+              [style.background]="getCircleGradient(skill.percentage)"
+            >
+              {{ skill.percentage }}%
+            </div>
+          </div>
+          <!-- <img
+            class="circle"
+            style="height: 150%; background-color: #94a3b8; width: 100%"
+            src="{{ skill.image }}"
+            alt=""
+          /> -->
+          <div class="skill-name">{{ skill.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frameworks Section -->
+  <div class="skill-category">
+    <h3>Frameworks & Libraries</h3>
+    <div class="row g-4">
+      <div
+        class="col-lg-2 col-md-3 col-sm-4 col-6"
+        *ngFor="let skill of frameworkSkills"
+      >
+        <div class="skill-card">
+          <div class="circle-wrap">
+            <div
+              class="circle"
+              [style.background]="getCircleGradient(skill.percentage)"
+            >
+              {{ skill.percentage }}%
+            </div>
+          </div>
+          <div class="skill-name">{{ skill.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Section -->
+  <div class="skill-category">
+    <h3>Database & ORM</h3>
+    <div class="row g-4">
+      <div
+        class="col-lg-2 col-md-3 col-sm-4 col-6"
+        *ngFor="let skill of databaseSkills"
+      >
+        <div class="skill-card">
+          <div class="circle-wrap">
+            <div
+              class="circle"
+              [style.background]="getCircleGradient(skill.percentage)"
+            >
+              {{ skill.percentage }}%
+            </div>
+          </div>
+          <div class="skill-name">{{ skill.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Section -->
+  <div class="skill-category">
+    <h3>Architecture</h3>
+    <div class="row g-4">
+      <div
+        class="col-lg-2 col-md-3 col-sm-4 col-6"
+        *ngFor="let skill of architectureSkills"
+      >
+        <div class="skill-card">
+          <div class="circle-wrap">
+            <div
+              class="circle"
+              [style.background]="getCircleGradient(skill.percentage)"
+            >
+              {{ skill.percentage }}%
+            </div>
+          </div>
+          <div class="skill-name">{{ skill.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Section -->
+  <div class="skill-category">
+    <h3>Tools and Others</h3>
+    <div class="row g-4">
+      <div
+        class="col-lg-2 col-md-3 col-sm-4 col-6"
+        *ngFor="let skill of toolSkills"
+      >
+        <div class="skill-card">
+          <div class="circle-wrap">
+            <div
+              class="circle"
+              [style.background]="getCircleGradient(skill.percentage)"
+            >
+              {{ skill.percentage }}%
+            </div>
+          </div>
+          <div class="skill-name">{{ skill.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

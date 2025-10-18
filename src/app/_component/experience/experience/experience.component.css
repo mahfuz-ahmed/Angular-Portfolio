@@ -1,0 +1,27 @@
+p,
+h5,
+h6 {
+  color: #94a3b8;
+  text-align: justify;
+}
+h3,
+h4 {
+  color: #3bbef8;
+}
+li {
+  color: #94a3b8;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.row {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+body {
+  background-color: rgb(16, 27, 47);
+}

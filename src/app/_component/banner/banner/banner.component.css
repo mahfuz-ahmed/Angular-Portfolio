@@ -1,0 +1,184 @@
+.container {
+  margin-top: 30px;
+}
+
+.card-section {
+  background-color: rgb(16, 27, 47);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+  overflow: visible;
+}
+
+/* .card-section:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+} */
+
+/* .card-section {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #10192b;
+  box-shadow: 0 8px 32px 0 rgba(200, 0, 205, 0.27);
+  transition: box-shadow 0.3s ease-in-out;
+} */
+
+.card-section:hover {
+  box-shadow: 0 16px 48px 0 rgba(200, 0, 205, 0.4); /* Adjusting box-shadow on hover */
+  /* transform: translate(+1px); */
+}
+
+.custom-gap {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-gap {
+    margin-top: 0; /* Remove margin on smaller screens */
+  }
+}
+
+.row-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.image-section {
+  flex: 1 1 40%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #2a2f38;
+  padding: 15px;
+}
+
+.text-section {
+  flex: 1 1 60%;
+  padding: 30px;
+  display: block; /* ensure always displays */
+}
+
+/* Profile Image */
+.profile-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title Animation */
+.animated-title {
+  color: #3bbef8;
+  font-size: 26px;
+  font-weight: 600;
+  animation: moveText 4s ease-in-out infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes moveText {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Description text */
+.description {
+  color: #94a3b8;
+  text-align: justify;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.keyword {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+
+/* Buttons & Icons */
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.btn {
+  background-image: linear-gradient(to left, #4b7bec, #a55eea, #4b7bec);
+  background-size: 200%;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.btn:hover {
+  background-position: right;
+}
+
+.social-icon {
+  height: 42px;
+  width: 42px;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive: small devices */
+@media (max-width: 768px) {
+  .row-section {
+    flex-direction: column;
+  }
+
+  .image-section {
+    border-right: none;
+    border-bottom: 1px solid #2a2f38;
+  }
+
+  .text-section {
+    padding: 20px;
+  }
+
+  .profile-img {
+    height: auto;
+    width: 100%;
+  }
+
+  /* ensure description always visible */
+  .description {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .leetCode {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px; /* Border thickness */
+    border-radius: 50%;
+    background: linear-gradient(to right, #4b7bec, #a55eea, #4b7bec);
+  }
+
+  .leetCode img {
+    border-radius: 50%;
+    background-color: #10192b; /* inner background (your card bg or white) */
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
